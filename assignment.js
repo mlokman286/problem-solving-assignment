@@ -2,9 +2,9 @@
 //homework-1 convater.
 function kilometerToMeter(kilometer) {
   if (kilometer < 0) {
-    return "Unexpected value. Value cannot be minus";
+    return "Unexpected value. Value cannot be minus"; //if any result is less than zero, this messege will be shown.
   } else {
-    var meter = kilometer * 1000; //we know that 1km= 1000m;
+    var meter = kilometer * 1000; //we know that 1km = 1000m;
     return meter;
   }
 }
@@ -14,7 +14,7 @@ console.log(result);
 //home work-2 buget calculetor.
 function bugetCalculator(watch, phone, laptop) {
   if (watch < 0 || phone < 0 || laptop < 0) {
-    return "Unexpected value. Quantity cannot be less than zero";
+    return "Unexpected value. Quantity cannot be less than zero"; //if any result is less than zero, this messege will be shown.
   } else {
     var watchPrice = watch * 50;
     var phonePrice = phone * 100;
@@ -24,7 +24,7 @@ function bugetCalculator(watch, phone, laptop) {
     return total;
   }
 }
-var result2 = bugetCalculator(7, -3, 2);
+var result2 = bugetCalculator(7, 5, 2);
 console.log(result2);
 
 //homework-3;hotelcost;
@@ -51,7 +51,7 @@ function hotelCost(nights) {
 var totalNightCost = hotelCost(30);
 console.log(totalNightCost);
 
-//homework-4 ,mega friend
+//homework-4 ,megaFriend
 function megaFriend(arry) {
   var arryLength = 0;
   var megaName = [];
@@ -64,6 +64,6 @@ function megaFriend(arry) {
   }
   return megaName;
 }
-var friends = ["Nadim Sheik", "Sohel Rana", "sujon Sarkar", "Joynal Abedin"];
+var friends = ["Nadim Sheik", "Sohel Rana","Joynal Abedin", "sujon Sarkar"];
 var biggestName = megaFriend(friends);
 console.log(biggestName);
