@@ -1,3 +1,4 @@
+//https://github.com/mlokman286/problem-solving-assignment
 //homework-1 convater.
 function kilometerToMeter(kilometer) {
   if (kilometer < 0) {
@@ -51,7 +52,18 @@ var totalNightCost = hotelCost(30);
 console.log(totalNightCost);
 
 //homework-4 ,mega friend
-var friends = ["Assadurzzaman", "Sujon", "Nadim", "Joynal", "Najim", "saiful"];
-function megaFriend(friends) {
-  for (var i; i <= friends.lenth; i++) {}
+function megaFriend(arry) {
+  var arryLength = 0;
+  var megaName = [];
+  for (var i = 0; i < arry.length; i++) {
+    var element = arry[i].length;
+    if (element > arryLength) {
+      arryLength = element;
+      megaName = arry[i];
+    }
+  }
+  return megaName;
 }
+var friends = ["Nadim Sheik", "Sohel Rana", "sujon Sarkar", "Joynal Abedin"];
+var biggestName = megaFriend(friends);
+console.log(biggestName);
